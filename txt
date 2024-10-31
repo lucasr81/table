@@ -1,0 +1,63 @@
+# Manual do Sistema Web: Editor de Tabelas Excel
+
+## Introdução
+Este sistema permite criar e gerenciar tabelas de maneira interativa, similar a um editor de planilhas. Os usuários podem importar arquivos Excel, adicionar e excluir linhas e colunas, salvar tabelas, e exportar os dados para CSV.
+
+## Funcionalidades
+
+### 1. Criar Tabela
+- **Como fazer**: Clique no botão "Criar Tabela" para iniciar uma nova tabela vazia.
+- **Resultado**: Uma tabela em branco será exibida, permitindo a adição de dados.
+
+### 2. Importar Dados
+- **Como fazer**: Utilize o campo de upload de arquivo para importar um arquivo `.xlsx` ou `.xls`.
+- **Resultado**: Os dados do arquivo selecionado serão carregados na tabela.
+
+### 3. Adicionar Linha
+- **Como fazer**: Clique no botão "Adicionar Linha".
+- **Resultado**: Uma nova linha será adicionada na parte inferior da tabela.
+
+### 4. Adicionar Coluna
+- **Como fazer**: Clique no botão "Adicionar Coluna".
+- **Resultado**: Uma nova coluna será adicionada à direita da tabela.
+
+### 5. Excluir Última Linha
+- **Como fazer**: Clique no botão "Excluir Linha".
+- **Resultado**: A última linha da tabela será removida.
+
+### 6. Excluir Última Coluna
+- **Como fazer**: Clique no botão "Excluir Coluna".
+- **Resultado**: A última coluna da tabela será removida.
+
+### 7. Salvar Tabela
+- **Como fazer**: Clique no botão "Salvar Tabela". Você será solicitado a nomear sua tabela.
+- **Resultado**: A tabela será salva no histórico de tabelas.
+
+### 8. Fechar Tabela
+- **Como fazer**: Clique no botão "Fechar Tabela".
+- **Resultado**: A tabela atual será fechada, retornando à tela inicial.
+
+### 9. Baixar CSV
+- **Como fazer**: Clique no botão "Baixar CSV".
+- **Resultado**: A tabela será exportada e baixada como um arquivo CSV.
+
+### 10. Mostrar Histórico de Tabelas
+- **Como fazer**: Clique no botão "Mostrar Histórico".
+- **Resultado**: Uma lista de tabelas salvas anteriormente será exibida, com opções para abrir ou excluir cada tabela.
+
+## Fórmulas Matemáticas
+O sistema permite a utilização de fórmulas para cálculos nas células. A única fórmula implementada até o momento é a soma:
+
+- **Fórmula**: Para somar valores de células, insira a fórmula na forma `=A1+A2+A3`, onde `A1`, `A2`, `A3` são referências de células.
+- **Como funciona**: Ao digitar uma fórmula, o sistema avaliará automaticamente e exibirá o resultado na célula.
+
+## Tecnologias Utilizadas
+- **HTML**: Estrutura básica do sistema.
+- **CSS**: Estilização do layout e elementos visuais.
+- **JavaScript**: Lógica do sistema, incluindo manipulação de tabelas e eventos.
+- **Handsontable**: Biblioteca para edição de tabelas em JavaScript.
+- **XLSX.js**: Biblioteca para ler e escrever arquivos Excel.
+- **Hyperformula**: Biblioteca para avaliação de fórmulas matemáticas.
+
+## Considerações Finais
+Este sistema foi projetado para ser intuitivo e fácil de usar, permitindo a manipulação eficiente de dados em formato de tabela. Para qualquer dúvida ou suporte adicional, entre em contato com o desenvolvedor.

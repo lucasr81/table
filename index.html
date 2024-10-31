@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Tabelas Excel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/handsontable/12.1.0/handsontable.full.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/hyperformula@latest/dist/hyperformula.full.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handsontable/12.1.0/handsontable.full.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Editor de Tabelas Excel</h1>
+
+    <div class="search-container">
+        <input type="text" id="searchYear" placeholder="Buscar por Ano">
+        <input type="text" id="searchMonth" placeholder="Buscar por Mês">
+        <input type="text" id="searchName" placeholder="Buscar por Nome">
+        <button id="searchTable">Buscar</button>
+    </div>
+
+    <div class="file-controls">
+        <input type="file" id="fileInput" accept=".xlsx, .xls" />
+        <button id="createTable">Criar Tabela</button>
+    </div>
+
+    <div id="controls" style="display: none;">
+        <button id="addRow"><i class="fas fa-plus"></i> Adicionar Linha</button>
+        <button id="addCol"><i class="fas fa-plus"></i> Adicionar Coluna</button>
+        <button id="editSave"><i class="fas fa-pencil-alt"></i> Editar</button>
+        <button id="deleteRow"><i class="fas fa-trash-alt"></i> Excluir Linha</button>
+        <button id="deleteCol"><i class="fas fa-trash-alt"></i> Excluir Coluna</button>
+        <button id="saveTable"><i class="fas fa-save"></i> Salvar Tabela</button>
+        <button id="closeTable"><i class="fas fa-times"></i> Fechar Tabela</button>
+        <button id="downloadCsv"><i class="fas fa-download"></i> Baixar CSV</button>
+    </div>
+
+    <div id="tableContainer">
+        <div id="hot"></div>
+    </div>
+
+    <h2>Histórico de Tabelas</h2>
+    <button id="toggleHistory">Mostrar Histórico</button>
+    <div id="historyContainer" style="display: none;">
+        <input type="text" id="searchHistoryMonth" placeholder="Buscar por Mês">
+        <input type="text" id="searchHistoryYear" placeholder="Buscar por Ano">
+        <input type="text" id="searchHistoryName" placeholder="Buscar por Nome">
+        <div id="historyList"></div>
+    </div>
+</body>
+</html>
